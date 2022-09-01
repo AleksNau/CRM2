@@ -5,4 +5,4 @@ const productPrice = 300;
 const productSumPrice = productAmount * productPrice;
 
 console.log("Наименование товара: ",productName )
-console.log("Общую сумма товаров: ",productSumPrice,"р")
+console.log("Общую сумма товаров: ",productSumPrice + "р")
