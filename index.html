@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preload" href="./fonts/Inter-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/Inter-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <title>CRM</title>
+</head>
+<body>
+<div class="container">
+        <h1 class="container__title">добавить товар</h1>
+        <input type="image" src="./image/cross.svg" class="cross" alt="закрывающий форму крестик" aria-label="cross">
+<form class="crm" id="my-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+        <fieldset class="crm__form">
+            <label for="name" class="crm__label">наименование</label>
+            <input type="text" class="crm__item" id="name" name="name">
+            <label for="category" class="crm__label">категория</label>
+            <input type="text" class="crm__item" id="category" name="category">
+            <label for="units" class="crm__label">единицы измерения</label>
+            <input type="text" class="crm__item" id="units" name="units" >
+            <label for="discount" class="crm__label">дисконт</label>
+            <div>
+                <input type="checkbox" class="crm__checkbox" aria-label="checkbox">
+                <input type="text" class="crm__item crm__item_optional" id="discount" name="discount" disabled>
+            </div>
+            <label for="description" class="crm__label">описание</label>
+            <textarea  rows="5" class="crm__item crm__item_fiverow" id="description" name="description"></textarea>
+            <label for="amount" class="crm__label">количество</label>
+            <input type="number" class="crm__item" id="amount" name="amount">
+            <label for="price" class="crm__label">цена</label>
+            <input type="number" class="crm__item" id="price" name="price">
+        </fieldset>
+
+        <button type="submit" class="button-add">добавить товар</button>
+</form>
+</div>
+</body>
+</html>

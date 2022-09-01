@@ -1,0 +1,158 @@
+.crm {
+    padding-top: 43px;
+
+}
+.container__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6E6893;
+    font-family: Inter;
+}
+.crm__form {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border-style: none;
+    min-height: 620px;
+    width: 580px;
+    padding: 28px;
+
+    background-color: #fff;
+}
+.crm__label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #6E6893;
+    padding-left: 10px;
+}
+.crm__item {
+    display: block;
+    width: 100%;
+    background-color: #F4F2FF;
+    border-radius: 6px;
+    border-color: #F4F2FF;
+    border-style: none;
+    padding: 10px 15px;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.25em;
+}
+
+.crm__checkbox {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: bottom;
+    margin-right: 5px;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #F4F2FF;
+    border-radius: 6px;
+    border-color: #F4F2FF;
+}
+
+.crm__item_optional {
+    display: inline-block;
+    width: 475px;
+}
+
+.button-add {
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #6D5BD0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border-style: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    float: right;
+    margin-right: 26px;
+    margin-top: 32px;
+}
+
+.cross {
+    Position: absolute; right:30px; top:20px;
+    height: 20px;
+    width: 20px;
+}
+
+.crm__checkbox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #F4F2FF;
+    border-radius: 8px;
+}
+
+.crm__checkbox:after {
+    content: '';
+    position: absolute;
+    top:12px;
+    left: 10px;
+    width: 20px;
+    height: 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.crm__checkbox:checked:after {
+    opacity: 1
+}
+
+.crm__checkbox:focus:before,
+.crm__checkbox:hover:not(:disabled):before {
+}
+
+.crm__checkbox:disabled:before {
+    background-color: #F4F2FF;
+}
+
+
+
+.crm__checkbox:checked:after {
+    opacity: 1
+}
+
+.crm__checkbox:focus:before,
+.crm__checkbox:hover:not(:disabled):before {
+}
+
+.crm__checkbox:disabled:before {
+    background-color: #F4F2FF;
+}
+
+.crm__item_fiverow {
+    padding: 11px 15px;
+    line-height: 1.125em;
+    resize: none;
+}
+
+.crm__label_discount {
+    display: block;
+    margin-top: 12px;
+}
+
+.crm__item:disabled{
+    background-color: #EEEEEE;
+}
+
+
