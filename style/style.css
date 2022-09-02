@@ -1,6 +1,7 @@
 @import "crm.css";
 @import "normalize.css";
 @import "global.css";
+@import "form_grid.css";
 @font-face {
     font-family: Inter;
     src: local("Inter-regular"), local("inter regular"), url("../fonts/Inter-Regular.ttf") format("truetype");

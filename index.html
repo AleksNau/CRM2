@@ -14,24 +14,25 @@
         <input type="image" src="./image/cross.svg" class="cross" alt="закрывающий форму крестик" aria-label="cross">
 <form class="crm" id="my-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
-        <fieldset class="crm__form">
-            <label for="name" class="crm__label">наименование</label>
-            <input type="text" class="crm__item" id="name" name="name">
-            <label for="category" class="crm__label">категория</label>
-            <input type="text" class="crm__item" id="category" name="category">
-            <label for="units" class="crm__label">единицы измерения</label>
-            <input type="text" class="crm__item" id="units" name="units" >
-            <label for="discount" class="crm__label">дисконт</label>
-            <div>
+        <fieldset class="crm__form crm__form-grid">
+            <label for="name" class="crm__label crm__label-name">наименование</label>
+            <input type="text" class="crm__item crm__item-name" id="name" name="name">
+            <label for="category" class="crm__label crm__label-category">категория</label>
+            <input type="text" class="crm__item crm__item-category" id="category" name="category">
+            <label for="units" class="crm__label crm__label-units">единицы измерения</label>
+            <input type="text" class="crm__item crm__item-units" id="units" name="units" >
+            <label for="discount" class="crm__label crm__label-discount">дисконт</label>
+            <div class="crm__item-discount">
                 <input type="checkbox" class="crm__checkbox" aria-label="checkbox">
                 <input type="text" class="crm__item crm__item_optional" id="discount" name="discount" disabled>
             </div>
-            <label for="description" class="crm__label">описание</label>
-            <textarea  rows="5" class="crm__item crm__item_fiverow" id="description" name="description"></textarea>
-            <label for="amount" class="crm__label">количество</label>
-            <input type="number" class="crm__item" id="amount" name="amount">
-            <label for="price" class="crm__label">цена</label>
-            <input type="number" class="crm__item" id="price" name="price">
+            <label for="description" class="crm__label crm__label-description">описание</label>
+            <textarea rows="5" class="crm__item crm__item_fiverow crm__item-description" id="description" name="description"></textarea>
+            <label for="amount" class="crm__label crm__label-amount">количество</label>
+            <input type="number" class="crm__item crm__item-amount" id="amount" name="amount">
+            <label for="price" class="crm__label crm__label-price">цена</label>
+            <input type="number" class="crm__item crm__item-price" id="price" name="price">
+            <button type="button" class="button-add-image">добавить изображение</button>
         </fieldset>
 
         <button type="submit" class="button-add">добавить товар</button>

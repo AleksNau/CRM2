@@ -14,12 +14,16 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     border-style: none;
-    min-height: 620px;
+    min-height: 403px;
     width: 580px;
-    padding: 28px;
+    padding-top: 28px;
+    padding-right: 28px;
+    padding-bottom: 18px;
+    padding-left: 28px;
 
     background-color: #fff;
 }
+
 .crm__label {
     font-style: normal;
     font-weight: 600;
@@ -60,7 +64,7 @@
 
 .crm__item_optional {
     display: inline-block;
-    width: 475px;
+    width: 200px;
 }
 
 .button-add {

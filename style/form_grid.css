@@ -1,0 +1,95 @@
+.crm__form-grid {
+    display: grid;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(10,auto);
+    gap: 10px 24px;
+}
+.crm__label-name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.crm__item-name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.crm__label-category {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.crm__item-category {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.crm__label-units {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.crm__item-units {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.crm__label-discount {
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.crm__item-discount {
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+
+.crm__label-description {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.crm__item-description {
+    grid-column: 2/3;
+    grid-row: 2/5;
+}
+
+.crm__label-amount {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.crm__item-amount {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.crm__label-price {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+.crm__item-price {
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+
+.button-add-image {
+    width: 100%;
+    height: 39px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #6D5BD0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border-style: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-top: 20px;
+    grid-column: 2/3;
+    grid-row: 9/10;
+}
