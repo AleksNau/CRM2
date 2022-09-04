@@ -1,4 +1,4 @@
-const productName =  prompt('Наименование товара:');
+/*const productName =  prompt('Наименование товара:');
 const productAmount = +(prompt('Количество товара:'));
 const productCategory = prompt('Категория товара:');
 const productPrice = +(prompt('Цена товара:'));
@@ -13,3 +13,4 @@ if (productAmount >= 1 && productPrice >= 1){
 } else {
     console.log('Вы ввели некорректные данные');
 }
+*/

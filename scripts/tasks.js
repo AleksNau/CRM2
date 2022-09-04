@@ -8,7 +8,6 @@ if (whether === 0) {
     console.log('Вы ввели некорректные данные');
 }
 
-
 const math =  prompt('Математика:');
 const history = (prompt('История:'));
 const english = prompt('Английский язык:');
