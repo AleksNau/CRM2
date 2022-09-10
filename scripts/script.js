@@ -1,10 +1,10 @@
-/*const productName =  prompt('Наименование товара:');
+const productName =  prompt('Наименование товара:');
 const productAmount = +(prompt('Количество товара:'));
 const productCategory = prompt('Категория товара:');
 const productPrice = +(prompt('Цена товара:'));
 const productSumPrice = productAmount * productPrice;
 
-if (productAmount >= 1 && productPrice >= 1){
+if (productAmount >= 1 && productPrice >= 1) {
     console.log(`Наименование товара: ${productName}`);
     console.log(`Общая сумма товаров: ${productSumPrice}р`);
     console.log(typeof productPrice);
@@ -13,4 +13,3 @@ if (productAmount >= 1 && productPrice >= 1){
 } else {
     console.log('Вы ввели некорректные данные');
 }
-*/
