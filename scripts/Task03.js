@@ -40,3 +40,7 @@ const calculate = (sum = 0,mount = 0,promo = '') => {
 
 const finalPrice = calculate( prompt('сумма?'),prompt('количество товаров'),prompt('промокод'));
 console.log('Финальная стоимость:',  finalPrice);
+
+/*Напишите функцию, которая принимает строку и возвращает обратную строку
+
+Пример: "Привет мир" => "рим тевирП"*/
