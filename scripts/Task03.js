@@ -4,7 +4,7 @@ const addPrefix = (massive,prefix) => {
     const officialName = massive;
     const preName = prefix;
 
-    for (i = 0;i <officialName.length; i++) {
+    for (let i = 0; i <officialName.length; i++) {
         officialName[i] = preName + " " + officialName[i];
     }
 
