@@ -8,9 +8,15 @@
 5 Числа должны быть от 1 до 100
 */
 const numbersArr = [];
-numbersArr.length = prompt('Длина массива');
-for ( i = 0; i < numbersArr.length; i++ ) {
-    numbersArr.push( Math.round( Math.random() * 100 ));
-} ;
-console.log(numbersArr);
+
+
+const test = (tested,lenght) => {
+    let newArr = tested;
+    let dlina = lenght;
+    for ( i = 0; i < dlina; i++ ) {
+        newArr.push(Math.random());
+    }
+    return newArr;
+}
+console.log(test(numbersArr,prompt()));
 
