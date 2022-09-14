@@ -14,7 +14,7 @@ const test = (tested,lenght) => {
     let newArr = tested;
     let dlina = lenght;
     for ( i = 0; i < dlina; i++ ) {
-        newArr.push(Math.random());
+        newArr.push(Math.round(Math.random() * 100));
     }
     return newArr;
 }
