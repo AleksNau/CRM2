@@ -7,4 +7,10 @@
 4. Сгенерировать случайные числа
 5 Числа должны быть от 1 до 100
 */
+const numbersArr = [];
+numbersArr.length = prompt('Длина массива');
+for ( i = 0; i < numbersArr.length; i++ ) {
+    numbersArr.push( Math.round( Math.random() * 100 ));
+} ;
+console.log(numbersArr);
 
