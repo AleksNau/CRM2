@@ -11,3 +11,16 @@
 1. Сделать метод определения четности и нечетности
 2. Сделать так чтобы массив заполнялся согласно условию четности и нечетности
 */
+
+const numbersArr2 = [];
+const test2 = (tested,lenght,min,max) => {
+    let newArr = tested;
+    let dlina = lenght;
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    for ( i = 0; i < dlina; i++ ) {
+        newArr.push(Math.floor((Math.random() * (max - min + 1)) + min));
+    }
+    return newArr;
+}
+console.log(test2(numbersArr2,prompt(),prompt(`min`),prompt(`max`)));
