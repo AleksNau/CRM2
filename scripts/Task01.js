@@ -1,22 +1,12 @@
-/*Напишите функцию генератор  массива случайных чисел в файле task01.js
-Функция принимает один обязательный параметр это количество элементов в массиве
-И возвращает массив со случайными числами от одного до 100 включительно;
-1.Создать массив
-2. Задать ему колличество елементов
-3. Загнать туда числа
-4. Сгенерировать случайные числа
-5 Числа должны быть от 1 до 100
-*/
 const numbersArr = [];
 
-
-const test = (tested,lenght) => {
+const test = (tested, lenght) => {
     let newArr = tested;
-    let dlina = lenght;
-    for ( i = 0; i < dlina; i++ ) {
+    for ( i = 0; i < lenght; i++ ) {
         newArr.push(Math.round(Math.random() * 100));
     }
     return newArr;
 }
-console.log(test(numbersArr,prompt()));
+
+console.log(test(numbersArr, prompt(`Длина первого массива:`)));
 
