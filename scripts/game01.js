@@ -1,5 +1,5 @@
         const rightNumber = (number) => {
-        const value = Math.floor(Math.random() * 101);
+        const value = Math.ceil(Math.random() * 100);
         const a = number;
 
         if (isNaN(a)) {
