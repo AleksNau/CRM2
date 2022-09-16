@@ -20,3 +20,7 @@
     }
 
 rightNumber(prompt());
+        git checkout -b lesson-071
+        git add .
+            git commit -m "lesson completed"
+        git push origin lesson-071
