@@ -1,6 +1,6 @@
-        const rightNumber = (number) => {
-        const value = Math.ceil(Math.random() * 100);
-        const a = number;
+const rightNumber = (number) => {
+    const value = Math.ceil(Math.random() * 100);
+    const a = number;
 
         if (isNaN(a)) {
             return console.log('Не число!')
