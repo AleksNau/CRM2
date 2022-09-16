@@ -6,6 +6,10 @@ const rightNumber = (number) => {
             return console.log('Не число!')
         }
 
+        if (a === null) {
+            return;
+        }
+
         if (value > a) {
             return console.log('Больше!')
         }
@@ -17,6 +21,7 @@ const rightNumber = (number) => {
         if (value < a) {
             return console.log('Меньше!')
         }
+
     }
 
 rightNumber(prompt());
