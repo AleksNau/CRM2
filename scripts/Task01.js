@@ -1,8 +1,9 @@
 const convertToEuro = (money) => {
-    let rub = money;
-    rub *= 1.2 * 73;
-    return Math.round(rub);
+    let finalSum = money;
+    finalSum *= 1.2 * 73;
+    finalSum.toFixed(2)
+    return finalSum;
 }
 
-const money = convertToEuro(prompt('какую сумму хотите конвертировать?'));
-console.log(money);
+const money = convertToEuro(prompt('Цена в Евро'));
+console.log(`Цена в рублях: `,money);
