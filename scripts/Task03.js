@@ -4,35 +4,15 @@ const calculate = (sum = 0,mount = 0,promo = '') => {
     let code = promo;
     if (amount > 10){
         price = price - (price * 0.03);
-        if (price > 30000) {
-        price = price - ((price - 30000) * 0.15);
-            if (code === 'METHED'){
-            price = price - (price * 0.1);
-            return price;
-            }  else if (code === 'G3H2Z1'&& price > 2000) {
-            price = price - 500;
-            return price;
-            }
-        return price;
-        }
-    return price;
     }
-    else if (price > 30000) {
+    if (price > 30000) {
         price = price - ((price - 30000) * 0.15);
-        if (code === 'METHED'){
-            price = price - (price * 0.1);
-            return price;
-        }  else if (code === 'G3H2Z1' && price > 2000) {
-            price = price - 500;
-            return price;
-        }
-        return price;
-    } else if (code === 'METHED'){
+    }
+    if (code === 'METHED'){
         price = price - (price * 0.1);
-        return price;
-    }  else if (code === 'G3H2Z1' && price > 2000) {
+    }
+    if (code === 'G3H2Z1' && price > 2000) {
         price = price - 500;
-        return price;
     }
 
     return price;
