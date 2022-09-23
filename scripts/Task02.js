@@ -9,4 +9,4 @@ const minMaxFoo = (arr, lenght, min, max) => {
     }
     return newArr;
 }
-console.log(minMaxFoo(minMaxArr, prompt(`Длина второго массива:`), prompt(`min второго массива`), prompt(`max второго массива`)));
+console.log(minMaxFoo(minMaxArr, 10, 10, -10));

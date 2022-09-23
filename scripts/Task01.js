@@ -8,5 +8,5 @@ const test = (tested, lenght) => {
     return newArr;
 }
 
-console.log(test(numbersArr, prompt(`Длина первого массива:`)));
+console.log(test(numbersArr, 6));
 

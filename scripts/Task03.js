@@ -5,38 +5,29 @@ const evenOddFoo = (arr, lenght, min, max, code) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     let a;
-
-    if (code === 'even') {
-        for ( i = 0; i < lenght; i++ ) {
-            a = (Math.floor((Math.random() * (max - min + 1)) + min));
-            if (a % 2 === 0) {
-                newArr.push(a);
-            } else {
-               if (a > 0) {
-                   a += 1;
-               } else {
-                   a -= 1;
+    for ( i = 0; i < lenght; i++ ) {
+        a = (Math.round((Math.random() * (max - min)) + min));
+        newArr.push(a);
+    }
+    let map = newArr.map(function (item) {
+        if (code === 'even') {
+               if (item % 2 !== 0 && item > 0) {
+                   item += 1;
                }
-                newArr.push(a);
-            }
-        }
-    }
-
-    if (code === 'odd') {
-        for ( i = 0; i < lenght; i++ ) {
-            a = (Math.floor((Math.random() * (max - min + 1)) + min));
-            if (a % 2 !== 0) {
-                newArr.push(a);
-            } else {
-                if (a > 0) {
-                    a -= 1;
-                } else {
-                    a += 1;
+               else if (item % 2 !== 0 && item < 0) {
+                    item -= 1;
                 }
-                newArr.push(a);
-            }
         }
+        if (code === 'odd') {
+             if (item % 2 === 0 && item > 0) {
+                 item -= 1;
+             }
+             else if (item % 2 === 0 && item < 0) {
+                 item += 1;
+             }
     }
-    return newArr;
+        return item;
+})
+return map;
 }
-console.log(evenOddFoo(numbersEvenOdd,prompt(`Длина третьего массива`),prompt(`min третьего массива`),prompt(`max третьего массива`),prompt(`even или odd`)));
+console.log(evenOddFoo(numbersEvenOdd,100,10,-10,`even`));
