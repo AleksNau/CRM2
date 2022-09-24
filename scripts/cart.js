@@ -6,6 +6,7 @@ const cart = {
     getTotalPrice() {
         return this.totalPrice;
     },
+
     add(name,price,amount = 1) {
 
         if (this.items.includes(name)){
