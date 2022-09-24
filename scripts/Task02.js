@@ -5,7 +5,7 @@ const minMaxFoo = (arr, lenght, min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     for ( i = 0; i < lenght; i++ ) {
-        newArr.push(Math.floor((Math.random() * (max - min + 1)) + min));
+        newArr.push(Math.floor((Math.random() * (max - min )) + min));
     }
     return newArr;
 }
