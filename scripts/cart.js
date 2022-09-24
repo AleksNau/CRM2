@@ -47,4 +47,3 @@ cart.add(`тарелки`,200,3);
 cart.add(`бельё`,450,1);
 cart.increaseCount(2);
 console.log(cart.print());
-console.log(cart.getTotalPrice());
