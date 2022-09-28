@@ -2,7 +2,7 @@ const minMaxArr = [];
 
 const minMaxFoo = (arr, lenght, min, max) => {
     let newArr = arr;
-    min = Math.ceil(min);
+    min = Math.floor(min);
     max = Math.floor(max);
     for ( i = 0; i < lenght; i++ ) {
         newArr.push(Math.floor((Math.random() * (max - min )) + min));

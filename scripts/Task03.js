@@ -17,6 +17,9 @@ const evenOddFoo = (arr, lenght, min, max, code) => {
                else if (item % 2 !== 0 && item < 0) {
                     item -= 1;
                 }
+               else if (item === -0 ) {
+                   item = Math.abs(item);
+               }
         }
         if (code === 'odd') {
              if (item % 2 === 0 && item > 0) {
@@ -24,6 +27,9 @@ const evenOddFoo = (arr, lenght, min, max, code) => {
              }
              else if (item % 2 === 0 && item < 0) {
                  item += 1;
+             }
+             else if (item === -0 ) {
+                 item = Math.abs(item);
              }
     }
         return item;
