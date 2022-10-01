@@ -1,39 +1,28 @@
-const numbersEvenOdd = [];
-
-const evenOddFoo = (arr, lenght, min, max, code) => {
-    let newArr = arr;
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    let a;
-    for ( i = 0; i < lenght; i++ ) {
-        a = (Math.round((Math.random() * (max - min)) + min));
-        newArr.push(a);
-    }
-    let map = newArr.map(function (item) {
-        if (code === 'even') {
-               if (item % 2 !== 0 && item > 0) {
-                   item += 1;
-               }
-               else if (item % 2 !== 0 && item < 0) {
-                    item -= 1;
-                }
-               else if (item === -0 ) {
-                   item = Math.abs(item);
-               }
+const generate = (length, min, max, code) => Array(length).fill().map(() => {
+    let item = Math.round((Math.random() * (max - min)) + min);
+    if (code === 'even') {
+        if (item % 2 !== 0 && item > 0) {
+            item += 1;
         }
-        if (code === 'odd') {
-             if (item % 2 === 0 && item > 0) {
-                 item -= 1;
-             }
-             else if (item % 2 === 0 && item < 0) {
-                 item += 1;
-             }
-             else if (item === -0 ) {
-                 item = Math.abs(item);
-             }
+        if (item % 2 !== 0 && item < 0) {
+            item -= 1;
+        }
+        if (item === -0 ) {
+            item = Math.abs(item);
+        }
     }
-        return item;
-})
-return map;
+    if (code === 'odd') {
+        if (item % 2 === 0 && item > 0) {
+            item -= 1;
+        }
+        else if (item % 2 === 0 && item < 0) {
+            item += 1;
+        }
+        else if (item === -0 ) {
+            item = Math.abs(item);
+        }
 }
-console.log(evenOddFoo(numbersEvenOdd,100,10,-10,`even`));
+    return item;
+})
+
+console.log(generate(100,-10,10,`odd`),);
