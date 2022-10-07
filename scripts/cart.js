@@ -21,7 +21,7 @@ const cart = {
         for (i = 0;i < this.items.length; i++) {
             itemCount += this.items[i].count;
         }
-        this.count += amount;
+        itemCount += amount;
         return this.count =  itemCount;
     },
 
@@ -51,5 +51,6 @@ cart.add(`бельё`,450,1);
 cart.increaseCount(2);
 console.log(cart.calculateItemPrice())
 console.log(cart.print());
+console.log(cart.getTotalPrice())
 cart.clear();
 console.log(cart.print());
