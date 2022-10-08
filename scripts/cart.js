@@ -14,11 +14,11 @@ const cart = {
         item.count = amount;
         this.increaseCount(amount);
         this.calculateItemPrice();
-        return this.items.push(item);
+        this.items.push(item);
     },
 
     increaseCount(amount) {
-        return this.count += amount;
+        this.count += amount;
     },
 
     calculateItemPrice() {
