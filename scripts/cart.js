@@ -26,7 +26,7 @@ const cart = {
          for (i = 0;i < this.items.length; i++) {
              itemPrice += this.items[i].price * this.items[i].count;
          }
-        return this.totalPrice = itemPrice;
+        this.totalPrice = itemPrice;
     },
 
     clear() {
@@ -36,7 +36,7 @@ const cart = {
     },
 
     print() {
-       console.log(JSON.stringify(this));
+       console.log(JSON.stringify(this.items));
        console.log(this.totalPrice);
     },
 };
