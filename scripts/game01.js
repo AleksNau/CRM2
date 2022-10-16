@@ -1,10 +1,12 @@
-'use strict'
+'use strict';
 const value = Math.ceil(Math.random() * 100);
 
 function rightNumber(randomNumber) {
   const userInput = prompt('Введите число');
   const userNumber = +userInput;
-  if (userInput != NaN) {
+  if (isNaN(userInput)) {
+    alert('Нужно писать число!');
+  } else {
     if (value < userNumber) {
       alert('Меньше!');
       return rightNumber();
