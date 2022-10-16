@@ -27,7 +27,6 @@ const rectangle = {
     return `${this.width * this.height}см`;
   },
 };
-
 rectangle.setHeight = 10;
 rectangle.setWidth = 6;
 console.log(rectangle.Perimeter);
